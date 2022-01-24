@@ -1,0 +1,144 @@
+.main-container {
+  background: #f4f4f4;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-content-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  row-gap: 24px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Nunito Sans", Arial, sans-serif;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-stroke-color: rgba(90, 90, 113, 0.1);
+  -webkit-overflow-scrolling: touch;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga";
+}
+
+.fill-width {
+  width: 100%;
+  min-width: 240px;
+  max-width: 480px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+}
+
+.app-name {
+  font-size: 2rem;
+  line-height: 1.13;
+  font-weight: 800;
+  color: #222;
+}
+
+.separator {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #8c8c8c;
+}
+
+.company-name {
+  font-size: 3rem;
+  line-height: 1.13;
+  font-weight: 800;
+  color: #007748;
+}
+
+.file-input {
+  position: relative;
+  display: flex;
+  flex: 1;
+  width: 100%;
+  color: transparent;
+  z-index: 3;
+  height: 2.75rem;
+}
+
+.file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.file-input::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  content: "Let's start!";
+  display: inline-block;
+  background: #3cc786;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  z-index: 2;
+}
+
+.content-zone {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2.125rem;
+}
+
+.card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border-radius: 0.25rem;
+  background: #fff;
+  border-bottom: 0.25rem solid #ff8d6d;
+  color: #8c8c8c;
+  text-align: center;
+}
+
+.card.output {
+  border-bottom-color: #3cc786;
+}
+
+.card .header {
+  color: #fff;
+  background: #ff8d6d;
+  font-size: 1rem;
+  letter-spacing: normal;
+  line-height: 2.75rem;
+  font-weight: 600;
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.card.output .header {
+  background: #3cc786;
+}
+
+.card .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  color: #8c8c8c;
+  height: 36vh;
+  overflow: auto;
+  white-space: pre-line;
+}
